@@ -1,0 +1,2 @@
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(other=>other.setAttribute('aria-pressed',String(other===button)));document.querySelectorAll('[data-category]').forEach(card=>{card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter})}));
+document.querySelector('#feedback').addEventListener('click',()=>{document.querySelector('#status').textContent='反馈示例：笔记已保存。此预览未写入学习数据。'});
